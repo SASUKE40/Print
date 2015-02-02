@@ -1,0 +1,25 @@
+{
+  "name": "print",
+  "version": "1.0.0",
+  "authors": [
+    "SASUKE <18825188848@163.com>"
+  ],
+  "description": "print o2o",
+  "main": "css/main.css",
+  "keywords": [
+    "print"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/SASUKE40/Print",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "amazeui": "~2.2.1"
+  }
+}
