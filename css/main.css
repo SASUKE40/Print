@@ -1,11 +1,42 @@
 body{
   background: url(../assets/geometry2.png);
 }
+.header-img{
+  width: 24px;
+  height: 24px;
+}
 .intro{
-  margin: 5em 0;
+  background: #1E5B94;
+  text-align: center;
+  padding: 100px 0;
+}
+.intro .title{
+  color: white;
+  font-size: 72px;
+}
+.intro .description{
+  color: white;
+  font-size: 32px;
+}
+.merchant{
+  padding: 50px 0;
+}
+.merchant p{
+  margin: 0;
+}
+.list{
+  background: white;
+  padding: 2em;
+}
+.print{
+  background: white;
+  padding: 2em;
 }
 .qrcode-box{
   margin-top: 2em;
+}
+.qrcode-box p{
+  margin: 0;
 }
 .footer p {
   color: #7f8c8d;

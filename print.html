@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>打印鸡</title>
+  <title>打印鸡 - 打印设置</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -33,6 +33,7 @@
 
   <link rel="stylesheet" href="bower_components/amazeui/dist/css/amazeui.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bower_components/dropzone/dist/dropzone.css">
 </head>
 <body>
 <header class="am-topbar am-topbar-fixed-top">
@@ -60,79 +61,35 @@
       </ul>
 
       <div class="am-topbar-right">
-        <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm"><span class="am-icon-pencil"></span> 注册</button>
+        <button class="am-btn am-btn-danger am-topbar-btn am-btn-sm"><span class="am-icon-sign-out"></span>登出</button>
       </div>
 
       <div class="am-topbar-right">
-        <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm"><span class="am-icon-user"></span> 登录</button>
+        <button class="am-btn am-topbar-btn am-btn-sm">SASUKE</button>
       </div>
     </div>
   </div>
 </header>
-<div class="intro">
+<div class="print">
 <div class="am-g am-container">
-  <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
-    <h1 class="am-text-center am-kai title">打印<img src="assets/rooster.png" alt="打印鸡" class="am-inline am-img-thumbnail am-circle"/></h1>
-    <blockquote class="am-align-right description">
-      <p>咯咯咯咯咯咯...</p>
-    </blockquote>
+  <div class="am-u-lg-12">
+    <h1>文件列表</h1>
+    <form action="/file-upload"
+          class="dropzone">
+      <div class="dz-message">
+        <p class="am-text-xxxl">拖动到这里上传</p>
+      </div>
+    </form>
   </div>
-  <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
-    <div class="am-img-thumbnail qrcode-box">
-      <div class="qrcode am-pagination-centered"></div>
-      <p class="am-text-xs am-text-center">请使用微信扫码，直接登录</p>
-    </div>
-  </div>
+  <p class="am-u-lg-12">
+    * 目前一张订单最多支持打印 5 个文件
+  </p>
+  <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+  <h1>打印规格</h1>
+  <p class="am-u-lg-12">
+    * 一张订单内多个文件只能使用同一个打印规格，如您有文件需要使用另外的打印规格，请新建订单
+  </p>
 </div>
-</div>
-<div class="am-g am-container">
-<ul data-am-widget="gallery" class="am-gallery am-avg-sm-2
-  am-avg-md-3 am-avg-lg-4 am-gallery-bordered" data-am-gallery="{  }">
-  <li>
-    <div class="am-gallery-item">
-      <a href="#"
-         class="">
-        <img src="holder.js/300x200/sky"
-             alt="远方 有一个地方 那里种有我们的梦想" />
-        <h3 class="am-gallery-title">华农华山打印店</h3>
-        <div class="am-gallery-desc">打印二毛起，一小时内完工</div>
-      </a>
-    </div>
-  </li>
-  <li>
-    <div class="am-gallery-item">
-      <a href="#"
-         class="">
-        <img src="holder.js/300x200/sky"
-             alt="某天 也许会相遇 相遇在这个好地方" />
-        <h3 class="am-gallery-title">华农五山打印店</h3>
-        <div class="am-gallery-desc">打印二毛起，一小时内完工</div>
-      </a>
-    </div>
-  </li>
-  <li>
-    <div class="am-gallery-item">
-      <a href="#"
-         class="">
-        <img src="holder.js/300x200/sky"
-             alt="不要太担心 只因为我相信" />
-        <h3 class="am-gallery-title">华农华山打印店</h3>
-        <div class="am-gallery-desc">打印二毛起，一小时内完工</div>
-      </a>
-    </div>
-  </li>
-  <li>
-    <div class="am-gallery-item">
-      <a href="#"
-         class="">
-        <img src="holder.js/300x200/sky"
-             alt="终会走过这条遥远的道路" />
-        <h3 class="am-gallery-title">华农五山打印店</h3>
-        <div class="am-gallery-desc">打印二毛起，一小时内完工</div>
-      </a>
-    </div>
-  </li>
-</ul>
 </div>
 <footer class="footer am-footer">
   <p>© 2015 <a href="#" target="_blank">Print Rooster, Inc.</a></p>
@@ -153,5 +110,6 @@
 <script src="bower_components/jquery-qrcode/jquery.qrcode.min.js"></script>
 <script src="js/main.js"></script>
 <script src="bower_components/holderjs/holder.js"></script>
+<script src="bower_components/dropzone/dist/dropzone.js"></script>
 </body>
 </html>
