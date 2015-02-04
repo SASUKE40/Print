@@ -10,8 +10,8 @@ var gulp = require('gulp'),
 
 gulp.task('minifycss', function() {
   return gulp.src('src/*.css')        //压缩的文件
-    .pipe(gulp.dest('minified/css'))  //输出文件夹
-    .pipe(minifycss());   //执行压缩
+    .pipe(minifycss())                //执行压缩
+    .pipe(gulp.dest('minified/css')); //输出文件夹
 });
 
 gulp.task('minifyjs', function() {
